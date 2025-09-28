@@ -84,7 +84,7 @@ statusContainer.appendChild(otherServicesContainer);
 
 // --- Events Data ---
 const eventsData = [
-  { name: "Halloween Event", date: "October 2, 2025 20:00:00" }
+  { name: "Halloween Event + Lounge Release", date: "October 2, 2025 20:00:00" }
 ];
 
 const eventContainer = document.getElementById("event-container");
@@ -116,9 +116,9 @@ eventsData.forEach(event => {
 
 // --- Maintenance Data ---
 const maintenanceData = [
-  { time: "2025-09-28 14:00", text: "Server restart" },
-  { time: "2025-09-29 10:00", text: "Database upgrade" },
-  { time: "2025-09-30 18:00", text: "Bug fixes rollout" }
+  { time: "2025-09-26 14:00", text: "GREDDO Games | Server Down" },
+  { time: "2025-09-26 19:00", text: "GREDDO Games | Update Test" },
+  { time: "2025-09-26 21:00", text: "GREDDO Games | Server Release" }
 ];
 
 const maintenanceContainer = document.getElementById("maintenance-container");
@@ -131,8 +131,8 @@ maintenanceData.forEach(item => {
 
 // --- Dev Log Data ---
 const devlogData = [
-  { update: "Added Halloween Event system", tag: "NEW" },
-  { update: "Improved loading performance", tag: "NEW" }
+  { update: "GREDDO Games | We've now added the cleaning system, unfortunately without animations yet. We've also added a new AFK system. Of course, we've also thought about autumn.", tag: "NEW" },
+  { update: "GREDDO Website | New website? We're happy to help. We've optimized everything so it looks perfect on PCs and every animation appears clean. You can also now see all the statuses.", tag: "NEW" }
 ];
 
 const devlogContainer = document.getElementById("devlog-container");
@@ -194,6 +194,7 @@ document.getElementById("halloween-close").addEventListener("click", () => {
     document.getElementById("main-content").classList.remove("hidden");
   }, 600); // nach der Animation
 });
+
 
 
 
