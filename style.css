@@ -410,64 +410,91 @@ p[class^="status-"]:hover {
   to { opacity: 1; transform: scale(1); }
 }
 
-/* --- Mobile Anpassungen --- */
-@media (max-width: 768px) {
+/* --- Tablets & kleine Laptops --- */
+@media (max-width: 1024px) {
   nav {
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 8px;
   }
 
   nav button {
     flex: 1 1 45%;
-    font-size: 0.9rem;
-    padding: 8px 10px;
+    font-size: 1rem;
+    padding: 10px;
   }
 
   section {
+    width: 95%;
     padding: 1rem;
-  }
-
-  .card {
-    font-size: 0.9rem;
-    padding: 0.8rem;
-  }
-
-  .support-btn {
-    width: 60px;
-    height: 60px;
-    font-size: 1.8rem;
   }
 
   .intro-box {
     width: 90%;
-    padding: 1.5rem;
+  }
+}
+
+/* --- Smartphones --- */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  nav button {
+    flex: 1 1 100%;
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .card {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .support-btn {
+    width: 55px;
+    height: 55px;
+    font-size: 1.4rem;
+  }
+
+  .intro-box {
+    padding: 1rem;
   }
 
   h1, h2 {
     font-size: 1.2rem;
   }
-
-  .footer-label {
-    font-size: 0.7rem;
-    text-align: center;
-  }
 }
 
-/* --- Sehr kleine Geräte (Smartphones < 480px) --- */
+/* --- Sehr kleine Smartphones (< 480px) --- */
 @media (max-width: 480px) {
+  nav {
+    flex-direction: column;
+  }
+
   nav button {
     flex: 1 1 100%;
     font-size: 0.85rem;
   }
 
-  h1, h2 {
-    font-size: 1rem;
+  .intro-box h1 {
+    font-size: 1.1rem;
+  }
+
+  .intro-box p {
+    font-size: 0.85rem;
   }
 
   .intro-box button {
     width: 100%;
   }
+
+  .footer-label {
+    font-size: 0.65rem;
+    text-align: center;
+  }
 }
+
 
 
 
