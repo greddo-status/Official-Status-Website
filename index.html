@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GREDDO</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Support Button oben rechts -->
+  <div class="support-container">
+    <button id="support-btn" class="support-btn">
+      <span class="question-icon">?</span>
+    </button>
+    <div id="support-menu" class="support-menu">
+      <a href="mailto:infogreddo@gmail.com">Email Support</a>
+      <a href="https://discord.gg/4a2FF8Dfkz" target="_blank">Discord</a>
+    </div>
+  </div>
+
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div class="logo">GREDDO</div>
+    <div class="loading-bar"></div>
+  </div>
+
+  <!-- Intro Screen -->
+  <div id="intro-screen" class="hidden">
+    <div class="intro-box">
+      <h1>GREDDO</h1>
+      <p>
+        GREDDO is a supermarket chain on Roblox. We are new and try to bring fast food 
+        to another level. Additionally, we are now building a tech market. Exciting things are coming.
+      </p>
+      <button id="enter-btn">Enter Site</button>
+    </div>
+  </div>
+
+<!-- Halloween Event Screen -->
+<div id="halloween-screen" class="hidden">
+  <div class="halloween-box">
+    <h1>
+      💀 HALLOWEEN EVENT 🎃
+    </h1>
+    <p>
+      Halloween is coming – join us on <strong>October 2, 2025</strong> for a night full of fright!
+    </p>
+    <button id="halloween-close">Continue</button>
+  </div>
+</div>
+
+
+  <!-- Main Content -->
+  <div id="main-content" class="hidden">
+    <nav>
+      <button data-tab="status">Status</button>
+      <button data-tab="events">Events</button>
+      <button data-tab="maintenance">Maintenance</button>
+      <button data-tab="devlog">Dev Log</button>
+    </nav>
+
+    <section id="status" class="tab active">
+      <h2>Status</h2>
+      <div id="status-container"></div>
+    </section>
+
+    <section id="events" class="tab">
+      <h2>Events</h2>
+      <div id="event-container"></div>
+    </section>
+
+    <section id="maintenance" class="tab">
+      <h2>Maintenance</h2>
+      <div id="maintenance-container"></div>
+    </section>
+
+    <section id="devlog" class="tab">
+      <h2>Dev Log</h2>
+      <div id="devlog-container"></div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+
+  <!-- Footer Label -->
+<div class="footer-label">
+  A service by GREDDO
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
