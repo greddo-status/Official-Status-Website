@@ -410,6 +410,67 @@ p[class^="status-"]:hover {
   to { opacity: 1; transform: scale(1); }
 }
 
+/* --- Mobile Anpassungen --- */
+@media (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  nav button {
+    flex: 1 1 45%;
+    font-size: 0.9rem;
+    padding: 8px 10px;
+  }
+
+  section {
+    padding: 1rem;
+  }
+
+  .card {
+    font-size: 0.9rem;
+    padding: 0.8rem;
+  }
+
+  .support-btn {
+    width: 60px;
+    height: 60px;
+    font-size: 1.8rem;
+  }
+
+  .intro-box {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  h1, h2 {
+    font-size: 1.2rem;
+  }
+
+  .footer-label {
+    font-size: 0.7rem;
+    text-align: center;
+  }
+}
+
+/* --- Sehr kleine Geräte (Smartphones < 480px) --- */
+@media (max-width: 480px) {
+  nav button {
+    flex: 1 1 100%;
+    font-size: 0.85rem;
+  }
+
+  h1, h2 {
+    font-size: 1rem;
+  }
+
+  .intro-box button {
+    width: 100%;
+  }
+}
+
+
+
 
 
 
