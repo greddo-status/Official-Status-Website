@@ -30,10 +30,10 @@ buttons.forEach(btn => {
 
 // --- Status Data ---
 const statusData = [
-  { name: "GREDDO | Germany", tag: "Roblox Game", status: "online" },
+  { name: "GREDDO | Germany", tag: "Roblox Game", status: "maintenance" },
   { name: "GREDDO | England", tag: "Roblox Game", status: "offline" },
   { name: "GREDDO | Service Center", tag: "Roblox Game", status: "offline" },
-  { name: "GREDDO | Website", tag: "Website", status: "maintenance" }
+  { name: "GREDDO | Website", tag: "Website", status: "online" }
 ];
 
 const statusContainer = document.getElementById("status-container");
@@ -80,7 +80,7 @@ statusContainer.appendChild(otherServicesContainer);
 
 // --- Events Data ---
 const eventsData = [
-  { name: "Halloween Event + Lounge Release", date: "October 2, 2025 20:00:00" }
+  { name: "Halloween Event", date: new Date().setHours(20, 0, 0, 0) } // Heute 20:00 Uhr
 ];
 
 const eventContainer = document.getElementById("event-container");
@@ -89,26 +89,26 @@ eventsData.forEach(event => {
   card.className = "card";
   const countdown = document.createElement("p");
   countdown.id = "countdown";
-  card.innerHTML = `<h3>${event.name}</h3>`;
+  card.innerHTML = `<h3>🎃 ${event.name} 🎃</h3>`;
   card.appendChild(countdown);
   eventContainer.appendChild(card);
 
   // Countdown Timer
-  const countDownDate = new Date(event.date).getTime();
+  const countDownDate = event.date;
   setInterval(() => {
     const now = new Date().getTime();
     const distance = countDownDate - now;
     if (distance < 0) {
-      countdown.innerHTML = "Event started";
+      countdown.innerHTML = "🎉 It's time! Halloween Event starts now!";
     } else {
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
       const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-      countdown.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+      countdown.innerHTML = `${hours}h ${minutes}m ${seconds}s`;
     }
   }, 1000);
 });
+
 
 // --- Maintenance Data ---
 const maintenanceData = [
@@ -190,6 +190,7 @@ document.getElementById("halloween-close").addEventListener("click", () => {
     document.getElementById("main-content").classList.remove("hidden");
   }, 600); // nach der Animation
 });
+
 
 
 
