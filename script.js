@@ -112,9 +112,9 @@ eventsData.forEach(event => {
 
 // --- Maintenance Data ---
 const maintenanceData = [
-  { time: "2025-09-26 14:00", text: "GREDDO Games | Server Down" },
-  { time: "2025-09-26 19:00", text: "GREDDO Games | Update Test" },
-  { time: "2025-09-26 21:00", text: "GREDDO Games | Server Release" }
+  { time: "2025-09-30 18:00", text: "GREDDO Games | Server Down" },
+  { time: "2025-09-30 19:00", text: "GREDDO Games | No Information" },
+  { time: "2025-09-30 20:00", text: "GREDDO Games | No Information" }
 ];
 
 const maintenanceContainer = document.getElementById("maintenance-container");
@@ -190,6 +190,7 @@ document.getElementById("halloween-close").addEventListener("click", () => {
     document.getElementById("main-content").classList.remove("hidden");
   }, 600); // nach der Animation
 });
+
 
 
 
