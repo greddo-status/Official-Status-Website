@@ -30,7 +30,7 @@ buttons.forEach(btn => {
 
 // --- Status Data ---
 const statusData = [
-  { name: "GREDDO | Germany", tag: "Roblox Game", status: "maintenance" },
+  { name: "GREDDO | Germany", tag: "Roblox Game", status: "online" },
   { name: "GREDDO | England", tag: "Roblox Game", status: "offline" },
   { name: "GREDDO | Service Center", tag: "Roblox Game", status: "offline" },
   { name: "GREDDO | Website", tag: "Website", status: "online" }
@@ -190,6 +190,7 @@ document.getElementById("halloween-close").addEventListener("click", () => {
     document.getElementById("main-content").classList.remove("hidden");
   }, 600); // nach der Animation
 });
+
 
 
 
