@@ -52,8 +52,8 @@ statusData.forEach(item => {
 
 // --- Other Services Data ---
 const otherServicesData = [
-  { name: "Support", status: "online" },
-  { name: "Discord Server", status: "online" },
+  { name: "SelfServ SCO", status: "online" },
+  { name: "JustEat Service", status: "online" },
   { name: "Restaurant POS", status: "online" },
   { name: "EasyLink", status: "online" }
 ];
@@ -190,6 +190,7 @@ document.getElementById("halloween-close").addEventListener("click", () => {
     document.getElementById("main-content").classList.remove("hidden");
   }, 600); // nach der Animation
 });
+
 
 
 
